@@ -127,6 +127,10 @@ const healthcheckFailed = ({
   }
 };
 
+const installHerokuCLIIfNeeded = () => {
+  execSync(`which heroku || curl https://cli-assets.heroku.com/install-ubuntu.sh | sh`)
+}
+
 // Input Variables
 let heroku = {
   api_key: core.getInput("heroku_api_key"),
@@ -177,6 +181,7 @@ if (heroku.dockerBuildArgs) {
 (async () => {
   // Program logic
   try {
+    installHerokuCLIIfNeeded();
     // Just Login
     if (heroku.justlogin) {
       execSync(createCatFile(heroku));

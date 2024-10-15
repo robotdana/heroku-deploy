@@ -46,7 +46,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.13.15 # This is the action
@@ -66,7 +66,7 @@ You learn more about GitHub Secrets [here](https://docs.github.com/en/actions/co
 
 ## Important Note
 
-**Please  Note**: `ubuntu-latest` which as of the time of updating this documentation is 24.04 no longer supports the `heroku-cli` by default. So if you must use the latest version of `ubuntu-latest`, be sure to install `heroku-cli` (instructions [here](https://devcenter.heroku.com/articles/heroku-cli#install-the-heroku-cli)) before running the plugin.
+**Please  Note**: `ubuntu-latest` which as of the time of updating this documentation is 24.04 no longer supports the `heroku-cli` by default. So if you use the latest version of `ubuntu-latest` this will take the additional time to install heroku-cli. You can use `ubuntu-22.04` to avoid this time penalty.
 
 **Please Note**: Git has recently announced that it is planning to switch the default branch's name from "**master**" to "**main**". For this reason, the Action also pushes to the "**main**" branch in the heroku origin by default and if your Heroku App is still using the "**master**" branch, then the Action will automatically switch your Heroku remote to use "**main**" as the default branch. There is **No Action Needed** from you, just keep in mind that this change is occurring as you continue to use the App and if you ever need to manually deploy the App, you can do so using the following command:
 
@@ -124,7 +124,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.13.15 # This is the action
@@ -151,7 +151,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.13.15 # This is the action
@@ -190,7 +190,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.13.15 # This is the action
@@ -217,7 +217,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.13.15 # This is the action
@@ -246,7 +246,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.13.15 # This is the action
@@ -275,7 +275,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.13.15 # This is the action
@@ -306,7 +306,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.13.15 # This is the action
@@ -335,7 +335,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.13.15 # This is the action
@@ -366,7 +366,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.13.15 # This is the action
@@ -396,7 +396,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.13.15 # This is the action
@@ -426,7 +426,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.13.15 # This is the action
@@ -459,7 +459,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.13.15 # This is the action
@@ -494,7 +494,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.13.15 # This is the action
@@ -541,7 +541,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.13.15 # This is the action
@@ -570,7 +570,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.13.15
@@ -597,7 +597,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.13.15 # This is the action
